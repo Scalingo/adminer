@@ -1442,8 +1442,8 @@ var thousandsSeparator = \'',js_escape(lang(5)),'\';
 <div id="help" class="jush-',$y,' jsonly hidden"></div>
 ',script("mixin(qs('#help'), {onmouseover: function () { helpOpen = 1; }, onmouseout: helpMouseout});"),'
 <div class="warning">
-    <p>This Adminer instance provided by Scalingo will be decommissioned and put offline on the 16th of February 2024 (2024-02-16).</p>
-    <p>If you are using it, please get acquainted with other access methods, as described in our documentation:</p>
+    <p>This Adminer instance provided by Scalingo will be decommissioned and put offline on the 1st of April 2024 (2024-04-01).</p>
+    <p>If you are using it, please have a look at other access methods described in our documentation:</p>
     <ul>
         <li>for <a href="">PostgreSQL&reg;</a></li>
         <li>for <a href="">MySQL&reg;</a></li>
