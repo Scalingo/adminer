@@ -1443,13 +1443,7 @@ var thousandsSeparator = \'',js_escape(lang(5)),'\';
 ',script("mixin(qs('#help'), {onmouseover: function () { helpOpen = 1; }, onmouseout: helpMouseout});"),'
 <div class="warning">
     <p>This Adminer instance provided by Scalingo will be decommissioned and put offline on the 1st of April 2024 (2024-04-01).</p>
-    <p>If you are using it, please have a look at other access methods described in our documentation:</p>
-    <ul>
-        <li>for <a href="">PostgreSQL&reg;</a></li>
-        <li>for <a href="">MySQL&reg;</a></li>
-        <li>for <a href="">MongoDB&reg;</a></li>
-        <li>for <a href="">ElasticSearch&reg;</a></li>
-    </ul>
+    <p>If you are using it, please have a look at <a href="https://doc.scalingo.com/platform/databases/access">other access methods</a> described in our documentation.</p>
 </div>
 <div id="content">
 ';if($Va!==null){$A=substr(preg_replace('~\b(username|db|ns)=[^&]*&~','',ME),0,-1);echo'<p id="breadcrumb"><a href="'.h($A?$A:".").'">'.$kc[DRIVER].'</a> &raquo; ';$A=substr(preg_replace('~\b(db|ns)=[^&]*&~','',ME),0,-1);$M=$b->serverName(SERVER);$M=($M!=""?$M:lang(34));if($Va===false)echo"$M\n";else{echo"<a href='".h($A)."' accesskey='1' title='Alt+Shift+1'>$M</a> &raquo; ";if($_GET["ns"]!=""||(DB!=""&&is_array($Va)))echo'<a href="'.h($A."&db=".urlencode(DB).(support("scheme")?"&ns=":"")).'">'.h(DB).'</a> &raquo; ';if(is_array($Va)){if($_GET["ns"]!="")echo'<a href="'.h(substr(ME,0,-1)).'">'.h($_GET["ns"]).'</a> &raquo; ';foreach($Va
