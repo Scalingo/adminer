@@ -1443,7 +1443,12 @@ var thousandsSeparator = \'',js_escape(lang(5)),'\';
 ',script("mixin(qs('#help'), {onmouseover: function () { helpOpen = 1; }, onmouseout: helpMouseout});"),'
 <div class="warning">
     <p>This Adminer instance provided by Scalingo will be decommissioned and put offline on the 1st of April 2024 (2024-04-01).</p>
-    <p>If you are using it, please have a look at <a href="https://doc.scalingo.com/platform/databases/access">other access methods</a> described in our documentation.</p>
+    <p>To learn more about the reasons that led us to make this decision, please refer to our <a href="https://doc.scalingo.com/security/bulletins/ssb-2024-001">Security Bulletin</a>.</p>
+    <p>If you are still using Adminer, please transition to using Scalingo\'s secure methods for database access:</p>
+    <ul>
+        <li><a href="https://doc.scalingo.com/platform/databases/access">Accessing the Database Console using Scalingo CLI</a></li>
+        <li><a href="https://doc.scalingo.com/platform/databases/access#encrypted-tunnel">Using an Encrypted Connection for local tools</a></li>
+    </ul>
 </div>
 <div id="content">
 ';if($Va!==null){$A=substr(preg_replace('~\b(username|db|ns)=[^&]*&~','',ME),0,-1);echo'<p id="breadcrumb"><a href="'.h($A?$A:".").'">'.$kc[DRIVER].'</a> &raquo; ';$A=substr(preg_replace('~\b(db|ns)=[^&]*&~','',ME),0,-1);$M=$b->serverName(SERVER);$M=($M!=""?$M:lang(34));if($Va===false)echo"$M\n";else{echo"<a href='".h($A)."' accesskey='1' title='Alt+Shift+1'>$M</a> &raquo; ";if($_GET["ns"]!=""||(DB!=""&&is_array($Va)))echo'<a href="'.h($A."&db=".urlencode(DB).(support("scheme")?"&ns=":"")).'">'.h(DB).'</a> &raquo; ';if(is_array($Va)){if($_GET["ns"]!="")echo'<a href="'.h(substr(ME,0,-1)).'">'.h($_GET["ns"]).'</a> &raquo; ';foreach($Va
